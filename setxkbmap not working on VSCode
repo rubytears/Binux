@@ -1,0 +1,9 @@
+[Swapping Left-Ctrl with CapsLock]
+1. On terminal: setxkbmap -option caps:escape
+2. Modifying the file: sudo nvim /etc/default/keyboard
+
+Check list available for xkb: grep "compose:" /usr/share/X11/xkb/rules/base.lst
+
+VSCode에서 작동오류 고치는 법
+VSCode에서 Setting으로 가서
+"keyboard.dispatch": "keyCode" and restart VS Code
